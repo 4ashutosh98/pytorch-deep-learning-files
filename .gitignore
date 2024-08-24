@@ -3,3 +3,4 @@ runs/
 data/
 food_data/
 __pycache__/
+.vscode/
