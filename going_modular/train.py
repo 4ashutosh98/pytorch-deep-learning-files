@@ -34,7 +34,8 @@ data_transform = transforms.Compose([
 train_dataloader, test_dataloader, class_names = data_setup.create_dataloaders(
     train_dir=train_dir,
     test_dir= test_dir,
-    transform = data_transform,
+    train_transform = data_transform,
+    test_transform = data_transform,
     batch_size = BATCH_SIZE,
     num_workers = NUM_WORKERS)
 
